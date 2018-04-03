@@ -95,8 +95,6 @@ public class CodeEditText extends AppCompatEditText {
             }
         }
 
-
-
         return ss;
     }
 
