@@ -2,6 +2,7 @@ package example.ybdesire.com.javacompiler;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,6 +20,10 @@ import android.support.v7.widget.AppCompatEditText;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -51,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //AdMob
+        MobileAds.initialize(this, "ca-app-pub-8100413825150401/4031937877");
+        AdView mAdView;
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
         //Edit Text
         final AppCompatEditText editText = (AppCompatEditText) findViewById(R.id.text_input_code);
@@ -137,6 +149,22 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 thread.start();
+                //disable button and modify color
+                Button btnc=findViewById(R.id.button_compile);
+                btnc.setClickable(false);
+                btnc.setBackgroundColor(Color.GRAY);
+
+                //timer for 5s delay and enable button
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Do something after 5s = 5000ms
+                        Button btncc=findViewById(R.id.button_compile);
+                        btncc.setClickable(true);
+                        btncc.setBackgroundResource(android.R.drawable.btn_default);
+                    }
+                }, 5000);
 
 
             }
