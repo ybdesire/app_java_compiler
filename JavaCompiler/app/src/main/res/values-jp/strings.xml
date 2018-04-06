@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Javaコンパイラ</string>
+    <string name="str_btn_run">ランニング</string>
+    <string name="str_txt_output">結果を出力する</string>
+    <string name="err_network">異常なネットワーク</string>
+</resources>
