@@ -178,14 +178,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTextChanged(CharSequence cs, int start, int count, int after) {
                 //Log.d("onTextChanged", "onTextChanged,str_len="+cs.toString().length());
-                Log.d("onTextChanged", "start="+start);
-                Log.d("onTextChanged", "str="+cs.toString().substring(start,start+1));
+                //Log.d("onTextChanged", "start="+start);
+                //Log.d("onTextChanged", "str="+cs.toString().substring(start,start+1));
                 //Log.d("onTextChanged", "count="+count);
                 //Log.d("onTextChanged", "after"+after);
 
                 if(cs.toString().substring(start,start+1).equals(" "))
                 {
-                    Log.d("onTextChanged", "get space");
+                    //Log.d("onTextChanged", "get space");
                     /*
                     SpannableString ss = new SpannableString(cs.toString());
                     String textToSearch = "public";
