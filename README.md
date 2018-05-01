@@ -74,3 +74,26 @@ Android APP for editing and running Java code.
 
 ![alt tag](screenshot.png)
 
+
+# 6. installed countries
+
+* 美国
+* 俄罗斯
+* 巴西
+* 毛里塔尼亚
+* 英国
+* 德国
+* 意大利
+* 罗马尼亚
+* 叙利亚
+* 埃塞俄比亚
+* 肯尼亚
+* 马达加斯加
+* 南非
+* 印度
+* 巴基斯坦
+* 巴布亚新几内亚
+* 菲律宾
+* 韩国
+* 也门
+* 斯里兰卡
