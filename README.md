@@ -74,7 +74,7 @@ You can download APK from Google Play [here](https://play.google.com/store/apps/
 
 # 5. users
 
-![alt tag](screenshot.png)
+![alt tag](users.png)
 
 
 # 6. installed countries
